@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Heroes Game Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pokemon Heroes Game Viewer</h1>
+        <p class="subtitle">Play without interruptions</p>
+    </header>
+    
+    <div class="container">
+        <div class="game-frame-container">
+            <iframe src="https://pokeheroes.com" id="gameFrame" title="Pokemon Heroes Game"></iframe>
+            <div class="loading" id="loadingIndicator">
+                <div class="pokeball"></div>
+                <p>Loading Pokemon Heroes...</p>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn" onclick="refreshGame()">Refresh Game</button>
+            <button class="btn" onclick="openOriginal()">Open Original Site</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>This viewer loads the official Pokemon Heroes website. All game content belongs to its respective owners.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
